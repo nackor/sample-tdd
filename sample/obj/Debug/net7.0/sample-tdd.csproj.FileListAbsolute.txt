@@ -1,0 +1,15 @@
+C:\Users\markk\Projects\sample-tdd\sample\bin\Debug\net7.0\sample-tdd.exe
+C:\Users\markk\Projects\sample-tdd\sample\bin\Debug\net7.0\sample-tdd.deps.json
+C:\Users\markk\Projects\sample-tdd\sample\bin\Debug\net7.0\sample-tdd.runtimeconfig.json
+C:\Users\markk\Projects\sample-tdd\sample\bin\Debug\net7.0\sample-tdd.dll
+C:\Users\markk\Projects\sample-tdd\sample\bin\Debug\net7.0\sample-tdd.pdb
+C:\Users\markk\Projects\sample-tdd\sample\obj\Debug\net7.0\sample-tdd.csproj.AssemblyReference.cache
+C:\Users\markk\Projects\sample-tdd\sample\obj\Debug\net7.0\sample-tdd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\markk\Projects\sample-tdd\sample\obj\Debug\net7.0\sample-tdd.AssemblyInfoInputs.cache
+C:\Users\markk\Projects\sample-tdd\sample\obj\Debug\net7.0\sample-tdd.AssemblyInfo.cs
+C:\Users\markk\Projects\sample-tdd\sample\obj\Debug\net7.0\sample-tdd.csproj.CoreCompileInputs.cache
+C:\Users\markk\Projects\sample-tdd\sample\obj\Debug\net7.0\sample-tdd.dll
+C:\Users\markk\Projects\sample-tdd\sample\obj\Debug\net7.0\refint\sample-tdd.dll
+C:\Users\markk\Projects\sample-tdd\sample\obj\Debug\net7.0\sample-tdd.pdb
+C:\Users\markk\Projects\sample-tdd\sample\obj\Debug\net7.0\sample-tdd.genruntimeconfig.cache
+C:\Users\markk\Projects\sample-tdd\sample\obj\Debug\net7.0\ref\sample-tdd.dll
