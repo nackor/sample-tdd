@@ -9,6 +9,6 @@ public class Convert_IntegerToString_Tests
     {
         int number = 1;
         string result = Converter.IntegerToString(number);
-        Assert.Equal(result,"One",true);
+        Assert.Equal("One",result,true);
     }
 }
