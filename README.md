@@ -25,6 +25,26 @@ The purpose of the project is to implement a simple conversion function that tak
 >about how language, culture, or related concerns should / could be
 >addressed by the code.
 
+# Developing using the Project
+
+## Project Structure
+
+### `sample/Program.cs`
+A simple console app interface for the conversion code. The console app takes a single integer parameter and outputs the converted worded string value on the console.
+
+### `sample/lib/Converter`
+The utility class that includes the `IntegerToWordedString` as a public static function.
+
+### `sample-tests/lib/Converter_IntegerToWordedString_Tests`
+The complete set of unit tests for the `IntegerToWordedString` function that is the focus of this project. Note the starting set of unit tests contain one test `NotImplementedYet` that may be obsoleted if you implement the complete functionality or the conversionspecification.
+
+## Building and Testing
+While the system can be built and tested using different IDEs, this project was created and tested using VSCode. Testing was performed by running the full set of tests in the VSCode terminal window using `dotnet` command -- specifically, executing `dotnet test` after changing the current directory to `sample-tests` folder.
+
+The first execution should result in final "red" state test status like:
+
+><span style='color:red;font-family:monospace;font-weight: bold'>Failed!  - Failed:     1, Passed:     1, Skipped:     0, Total:     2</span>
+
 # Using TDD to Implement the Feature
 This project is set up to allow you to iterate on the design and implementation using red-green-yellow TDD process. The current code of the implementation and test only has stub functionality and testing defined such that code on runs in a Not Implemented exception mode. The first unit test that should test implemented functionality is implemented without its implementation ("red" state).
 
