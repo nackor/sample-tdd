@@ -8,8 +8,8 @@ namespace sample
 {
     static public class Converter
     {
-       static public string IntegerToString(int number) {
-            return "";
+       static public string IntegerToWordedString(int number) {
+            throw new NotImplementedException();
        }  
     }
 }
