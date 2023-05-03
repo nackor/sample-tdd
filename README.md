@@ -46,6 +46,8 @@ The first execution should result in final "red" state test status like:
 ><span style='color:red;font-family:monospace;font-weight: bold'>Failed!  - Failed:     1, Passed:     1, Skipped:     0, Total:     2</span>
 
 # Using TDD to Implement the Feature
+Before starting to use TDD to implement the feature, we believe that you should take a strong <a href="https://martinfowler.com/bliki/Yagni.html">YAGNI</a> (You Ain't Going to Need It) and emergent design approach to this work. What does this mean? We suggest that you treat each new test case as defining a new specification for the code and that only the current set of test cases is the complete specification. Therefore, you should not design further than the current test cases even if you know more is coming (design upfront thinking). We believe that this will lead to closest experience in letting TDD drive design and refactoring rather than upfront thinking.
+
 This project is set up to allow you to iterate on the design and implementation using red-green-yellow TDD process. The current code of the implementation and test only has stub functionality and testing defined such that code on runs in a Not Implemented exception mode. The first unit test that should test implemented functionality is implemented without its implementation ("red" state).
 
 Create a new git branch to work on your implementation.
@@ -57,3 +59,5 @@ After you are in the "green" state (all unit test pass), add **one** new unit te
 Review the code and determine whether the code design could (or should) be improved-- if it can be improved ("yellow" state). You may want to consider things like DRY and SOLID principles, as well as run code metrics to help you evaluate the quality of the current design. If so, refactor the design and code making sure that none of changes break the existing tests. Add new tests as part of the refactoring if the new design has edge conditions or other situations that should be verified to maintain the quality of the system. Make sure to current changes to git, as your create new tests and working code.
 
 Repeat this red-green-yellow process until you have fully implemented the full specification for the method.
+
+We recommend that do a Pull Request and merge each iteration branch back into the main code if you want to honor a Continuous Integration (CI) approach to your evolving working design. 
