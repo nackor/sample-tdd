@@ -14,7 +14,7 @@ public class Convert_IntegerToWordedString_Tests
 
     [Fact]
     //TODO: Initial "red" test to code logic
-    public void One()
+    public void FirstPostiveIntegerIsOne()
     {
         int number = 1;
         string words = Converter.IntegerToWordedString(number);
