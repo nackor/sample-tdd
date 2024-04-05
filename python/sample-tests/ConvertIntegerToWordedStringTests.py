@@ -1,8 +1,7 @@
-# sample-tests/ConvertIntegerToWordedStringTests.py
 import unittest
 import sys
 
-sys.path.append("../")
+sys.path.append("../")  # pythonian nonsense
 from sample.lib.Converter import IntegerToWordedString
 
 

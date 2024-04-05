@@ -12,5 +12,4 @@ public:
     }
 };
 
-
 #endif // CONVERTER_HPP

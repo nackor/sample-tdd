@@ -1,6 +1,3 @@
-
-// javac Program.java lib/Converter.java 
-// java -ea Program.java
 import lib.Converter;
 
 public class Program {
@@ -23,3 +20,5 @@ public class Program {
         }
     }
 }
+// COMPILE WITH: javac Program.java lib/Converter.java
+// RUN WITH: java -ea Program.java

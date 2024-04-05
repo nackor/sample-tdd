@@ -34,6 +34,6 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    return 0; // Return 0 for success
+    return 0;
 }
-// g++ Program.cpp -o Program && ./Program 1
+// COMPILE AND RUN WITH: g++ Program.cpp -o Program && ./Program 1

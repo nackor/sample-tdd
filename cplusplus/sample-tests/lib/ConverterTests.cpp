@@ -3,14 +3,17 @@
 #include "../../sample/lib/Converter.hpp"
 #include <stdexcept>
 
+// TODO: This test will become obsolete if the featured function is fully implemented.
 TEST_CASE("Converter Function is not implemented")
 {
     REQUIRE_THROWS_AS(Converter::IntegerToWordedString(int(INT32_MIN)), std::logic_error);
 }
 
+// TODO: Initial "red" test to code logic
 TEST_CASE("First positive integer is converted to 'one'")
 {
     int number = 1;
     CHECK(Converter::IntegerToWordedString(number) == "one");
 }
-//  g++ -std=c++11 ConverterTests.cpp -o ConverterTests && ./ConverterTests
+
+// COMPILE & RUN WITH: g++ -std=c++11 ConverterTests.cpp -o ConverterTests && ./ConverterTests

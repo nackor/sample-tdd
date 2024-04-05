@@ -1,6 +1,6 @@
-﻿# sample/Program.py
-import sys
+﻿import sys
 from lib.Converter import IntegerToWordedString
+
 
 def main(args):
     if (
@@ -26,3 +26,4 @@ def main(args):
 
 if __name__ == "__main__":
     main(sys.argv)
+# python3 program.py 123
