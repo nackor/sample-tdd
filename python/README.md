@@ -1,56 +1,67 @@
-# Introduction 
+# Introduction
+
 The simple project designed to let you practice using TDD (Test Driven Development).
 
 # Getting Started
+
 The purpose of the project is to implement a simple conversion function that takes an integer number and converts to a worded string (in whatever output language that you care to use for implementation though the initial test is based on English). The project source is explicitly stubbed out to a minimum implementation that only defines main program, the conversion function declaration, and two unit tests.
 
 # Functional Specification
 
->## IntegerToWordedString
+> ## IntegerToWordedString
 >
->### Description
->Converts an integer number to its equivalent worded name as string
->such as the integer number `1` being represented as the string `one`.
+> ### Description
 >
->### Synopsis
->       string IntegerToWordedString(int number);
+> Converts an integer number to its equivalent worded name as string
+> such as the integer number `1` being represented as the string `one`.
 >
->### Parameters
->   `number`  -   non-negative integer value to be converted
+> ### Synopsis
 >
->   (return)  -   worded name equivalent of the input `number`
+>       string IntegerToWordedString(int number)
 >
->### Notes
->The implementation as provided in the same does not define any requirements
->about how language, culture, or related concerns should / could be
->addressed by the code.
+> ### Parameters
+>
+> `number` - non-negative integer value to be converted
+>
+> (return) - worded name equivalent of the input `number`
+>
+> ### Notes
+>
+> The implementation as provided in the same does not define any requirements
+> about how language, culture, or related concerns should / could be
+> addressed by the code.
 
 # Developing using the Project
 
 ## Project Structure
 
 ### `sample/Program`
+
 A simple console app interface for the conversion code. The console app takes a single integer parameter and outputs the converted worded string value on the console.
 
 ### `sample/lib/Converter`
+
 The utility class that includes the `IntegerToWordedString` as a public static function.
 
 ### `sample-tests/lib/ConvertIntegerToWordedStringTests`
+
 The complete set of unit tests for the `IntegerToWordedString` function that is the focus of this project. Note the starting set of unit tests contain one test `NotImplementedYet` that may be obsoleted if you implement the complete functionality or the conversionspecification.
 
 ## Building and Testing
+
 While the system can be built and tested using different IDEs, this project was created and tested using VSCode. Testing was performed by running the full set of tests in the VSCode terminal window using the `python3` command -- specifically, executing `python3  ConvertIntegerToWordedStringTests.py` after changing the current directory to `sample-tests` folder.
 
 The first execution should result in final "red" state test status like:
 
-<span style="color:red; font-family:monospace; font-weight: bold; white-space: pre-wrap;">
-----------------------------------------------------------------------
+## <span style="color:red; font-family:monospace; font-weight: bold; white-space: pre-wrap;">
+
 Ran 2 tests in 0.000s
 FAILED (errors=1)
 
 </span>
 
 # Using TDD to Implement the Feature
+
 Before starting to use TDD to implement the feature, we believe that you should take a strong <a href="https://martinfowler.com/bliki/Yagni.html">YAGNI</a> (You Ain't Going to Need It) and emergent design approach to this work. What does this mean? We suggest that you treat each new test case as defining a new specification for the code and that only the current set of test cases is the complete specification. Therefore, you should not design further than the current test cases even if you know more is coming (design upfront thinking). We believe that this will lead to closest experience in letting TDD drive design and refactoring rather than upfront thinking.
 
 This project is set up to allow you to iterate on the design and implementation using red-green-yellow TDD process. The current code of the implementation and test only has stub functionality and testing defined such that code on runs in a Not Implemented exception mode. The first unit test that should test implemented functionality is implemented without its implementation ("red" state).
@@ -65,4 +76,4 @@ Review the code and determine whether the code design could (or should) be impro
 
 Repeat this red-green-yellow process until you have fully implemented the full specification for the method.
 
-We recommend that do a Pull Request and merge each iteration branch back into the main code if you want to honor a Continuous Integration (CI) approach to your evolving working design. 
+We recommend that do a Pull Request and merge each iteration branch back into the main code if you want to honor a Continuous Integration (CI) approach to your evolving working design.
