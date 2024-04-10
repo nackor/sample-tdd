@@ -49,7 +49,7 @@ The complete set of unit tests for the `IntegerToWordedString` function that is 
 
 ## Downloading & Setting Up Maven
 
-[Maven] ()is a powerful project management tool that is used for Java projects. It can help you compile your code, package it, and then deploy it. It also handles dependencies and can be used to run your unit tests.
+[Maven](https://maven.apache.org/download.cgi) is a powerful project management tool that is used for Java projects. It can help you compile your code, package it, and then deploy it. It also handles dependencies and can be used to run your unit tests.
 
 Inspired by their [official Tutorial](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html), \
 here's how you can download and set up Maven to start running Java unit tests on your system:
