@@ -152,7 +152,7 @@ After your first "yellow" state, add **one** new unit test similar to the existi
 ### Continuous Integration:
 
 **Pull Requests and Merging:**
-After completing a cycle of implementations, consider merging your branch back into the main branch through a pull request. This practice endorses Continuous Integration, continuously merging small pieces of change into the main branch, which helps catch integration bugs early and improves cohesion in collaborative environments.
+After completing a cycle of implementations, consider merging your branch back into the main branch through a pull request. This practice endorses Continuous Integration, continuously merging small pieces of change into the main branch, which helps catch integration bugs early and improves cohesion in collaborative environments. \
 **Repeat:**
 Continue with the red-green-refactor cycle until the feature is fully implemented based on the comprehensive specifications dictated by your tests.
 By adhering to this structured approach, you enable a methodical implementation that adheres closely to specified requirements while maintaining high standards of code quality and coherence.

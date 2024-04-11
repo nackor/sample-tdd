@@ -16,22 +16,26 @@ xUnit is a popular testing framework for .NET, known for its extensibility and t
 
 1. **Defining Test Classes and Methods:**
    xUnit uses classes to encapsulate tests, and each test is a public method annotated with the `[Fact]` attribute indicating that it represents a test case.
+
 ```csharp
    public class UnitTest1
    {
-   [Fact]
-   public void Test1()
-   {
-   // Test code here
-   }
+        [Fact]
+        public void Test1()
+        {
+        // Test code here
+        }
    }
 ```
+
 2. **Assertions:**
    Assertions are critical in tests to validate the conditions you are checking. xUnit provides a rich set of assertion methods via the `Assert` class.
+
 ```csharp
    Assert.Equal(expected, actual);
 ```
-   This assertion checks for equality which is the most common assertion used in testing scenarios.
+
+This assertion checks for equality which is the most common assertion used in testing scenarios.
 
 ### Example: Testing a Simple Calculation
 
@@ -44,6 +48,7 @@ To demonstrate, let's create a simple test for a method that adds two integers.
 2. **Implementing a Method:**
 
    Let’s write a simple method to add two integers:
+
 ```csharp
    public class Calculator
    {
@@ -53,9 +58,11 @@ To demonstrate, let's create a simple test for a method that adds two integers.
         }
    }
 ```
+
 3. **Writing Tests:**
 
    Now, write a unit test to verify the `Add` method:
+
 ```csharp
    public class CalculatorTests
    {
@@ -68,6 +75,7 @@ To demonstrate, let's create a simple test for a method that adds two integers.
         }
    }
 ```
+
 ### Running Tests
 
 In Visual Studio, tests can be run via the Test Explorer. Alternatively, for command line environments, use:
