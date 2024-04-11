@@ -1,13 +1,14 @@
 import unittest
 import sys
 
-sys.path.append("../")  # pythonian nonsense
+sys.path.append("../")  # pythonian import uniqueness
 from sample.lib.Converter import IntegerToWordedString
 
 
 class ConvertIntegerToWordedStringTests(unittest.TestCase):
 
-    # TODO: This test will become obsolete if the featured function is fully implemented.
+    # TODO: This test will become obsolete once the IntegerToWordedString
+    # function is fully implemented as per the specifications.
     def test_not_implemented_yet(self):
         with self.assertRaises(NotImplementedError):
             IntegerToWordedString(-1000000)

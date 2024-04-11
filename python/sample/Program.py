@@ -26,4 +26,4 @@ def main(args):
 
 if __name__ == "__main__":
     main(sys.argv)
-# python3 program.py 123
+# COMPILE AND RUN WITH: python3 program.py 123

@@ -5,8 +5,8 @@ import lib.Converter;
 public class ConvertIntegerToWordedStringTests {
 
     @Test
-    // TODO: This test will become obsolete if the featured function is fully
-    // implemented.
+    // TODO: This test will become obsolete once the IntegerToWordedString function
+    // is fully implemented as per the specifications.
     void notImplementedYet() {
         assertThrows(UnsupportedOperationException.class, () -> {
             Converter.integerToWordedString(Integer.MIN_VALUE);
