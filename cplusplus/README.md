@@ -1,69 +1,110 @@
-# Introduction 
+# Introduction
+
 The simple project designed to let you practice using TDD (Test Driven Development).
 
 # Getting Started
+
 The purpose of the project is to implement a simple conversion function that takes an integer number and converts to a worded string (in whatever output language that you care to use for implementation though the initial test is based on English). The project source is explicitly stubbed out to a minimum implementation that only defines main program, the conversion function declaration, and two unit tests.
 
 # Functional Specification
 
->## IntegerToWordedString
+> ## IntegerToWordedString
 >
->### Description
->Converts an integer number to its equivalent worded name as string
->such as the integer number `1` being represented as the string `one`.
+> ### Description
 >
->### Synopsis
+> Converts an integer number to its equivalent worded name as string
+> such as the integer number `1` being represented as the string `one`.
+>
+> ### Synopsis
+>
 >       string IntegerToWordedString(int number);
 >
->### Parameters
->   `number`  -   non-negative integer value to be converted
+> ### Parameters
 >
->   (return)  -   worded name equivalent of the input `number`
+> `number` - non-negative integer value to be converted
 >
->### Notes
->The implementation as provided in the same does not define any requirements
->about how language, culture, or related concerns should / could be
->addressed by the code.
+> (return) - worded name equivalent of the input `number`
+>
+> ### Notes
+>
+> The implementation as provided in the same does not define any requirements
+> about how language, culture, or related concerns should / could be
+> addressed by the code.
 
 # Developing using the Project
 
 ## Project Structure
 
 ### `sample/Program.cpp`
+
 A simple console app interface for the conversion code. The console app takes a single integer parameter and outputs the converted worded string value on the console.
 
 ### `sample/lib/Converter.hpp`
+
 The utility header that includes the `IntegerToWordedString` as a public static function.
 
+### `sample-tests/doctest.h`
+
+The `doctest.h` file is the core component of the `doctest` Unit Testing framework, the fastest one available on C++. \
+The next file, `ConverterTests.cpp`, has been set up already to utilize the `doctest` framework, where there is no further action required on your part. \
+If you wish to learn more about the `doctest` framework in general, you can find such [on their github.](https://github.com/doctest/doctest)
+
 ### `sample-tests/lib/ConverterTests.cpp`
-The complete set of unit tests for the `IntegerToWordedString` function that is the focus of this project. Note the starting set of unit tests contain one test `NotImplementedYet` that may be obsoleted if you implement the complete functionality or the conversionspecification.
 
-## Downloading & Setting Up Doctest
-As you may see, there is another file, `doctest.h` in the repository in `sample-tests`. `doctest` is a Unit Testing framework of great value in C++, where further information about it can be found [here on this link](https://github.com/doctest/doctest). \
-`ConverterTests.cpp` has been fully set up already in order to be able to utilize the `doctest` framework for testing.
-
-
+The complete set of unit tests for the `IntegerToWordedString` function that is the focus of this project. Note the starting set of unit tests contain one test `NotImplementedYet` that may be obsoleted if you implement the complete functionality or the conversion/specification.
 
 ## Building and Testing
+
 While the system can be built and tested using different IDEs, this project was created and tested using VSCode. Testing was performed by running the full set of tests in the VSCode terminal window using the `g++` command -- specifically, executing `g++ -std=c++11 ConverterTests.cpp -o ConverterTests && ./ConverterTests` after changing the current directory to `sample-tests/lib` folder.
 
 The first execution should result in final "red" state test status like:
 
-><span style='color:red;font-family:monospace;font-weight: bold'>Failed!  - Failed:     1, Passed:     1, Skipped:     0, Total:     2</span>
+> <span style='color:red;font-family:monospace;font-weight: bold'>Failed! - Failed: 1, Passed: 1, Skipped: 0, Total: 2</span>
 
 # Using TDD to Implement the Feature
-Before starting to use TDD to implement the feature, we believe that you should take a strong <a href="https://martinfowler.com/bliki/Yagni.html">YAGNI</a> (You Ain't Going to Need It) and emergent design approach to this work. What does this mean? We suggest that you treat each new test case as defining a new specification for the code and that only the current set of test cases is the complete specification. Therefore, you should not design further than the current test cases even if you know more is coming (design upfront thinking). We believe that this will lead to closest experience in letting TDD drive design and refactoring rather than upfront thinking.
 
-This project is set up to allow you to iterate on the design and implementation using red-green-yellow TDD process. The current code of the implementation and test only has stub functionality and testing defined such that code on runs in a Not Implemented exception mode. The first unit test that should test implemented functionality is implemented without its implementation ("red" state).
+This document is intended to guide you through the use of Test-Driven Development (TDD) to implement a specific feature in your project while adhering to the <a href="https://martinfowler.com/bliki/Yagni.html">YAGNI</a> (You Ain't Going to Need It) principles as outlined by Martin Fowler. YAGNI emphasizes the practice of not adding functionality until it is necessary, essentially meaning you should only implement something when there is a test that requires it. This approach avoids over-engineering and keeps the design simple and focused on what is needed at present.
 
-Create a new git branch to work on your implementation.
+## Setting up for TDD
 
-To begin doing TDD using the red-green-yellow process, implement the code for IntegerToWordedString that will satisfy the first feature based unit test (the test named `One`). Write and test code until all existing unit tests succeed. Commit the changes to git.
+Our project is structured to facilitate iterative development using the red-green-refactor cycle of TDD. Initially, our code and tests are stubbed out to throw a Not Implemented exception, indicating functionality that exists solely in a "red" state, awaiting implementation.
 
-After you are in the "green" state (all unit test pass), add **one** new unit test similar to the existing unit test `One` that will test a different input and expected result. Make sure that all tests pass **except** this one new test -- putting in the "red" state. Commit the changes to git. Write code to implement the functionality verified in the unit test until the test passes again ("green" state), then commit the changes to git.
+## Preparing your workspace:
 
-Review the code and determine whether the code design could (or should) be improved-- if it can be improved ("yellow" state). You may want to consider things like DRY and SOLID principles, as well as run code metrics to help you evaluate the quality of the current design. If so, refactor the design and code making sure that none of changes break the existing tests. Add new tests as part of the refactoring if the new design has edge conditions or other situations that should be verified to maintain the quality of the system. Make sure to current changes to git, as your create new tests and working code.
+Create a New Git Branch: Before you start implementing your feature, create a new branch in Git. This isolates your development work from the main codebase, allowing for easy version control and review processes. You can create a new branch via the following Git command:
 
-Repeat this red-green-yellow process until you have fully implemented the full specification for the method.
+```
+git checkout -b your-branch-name
+```
 
-We recommend that do a Pull Request and merge each iteration branch back into the main code if you want to honor a Continuous Integration (CI) approach to your evolving working design. 
+## Read the Framework Documentation:
+
+To get familiar with the unit testing framework used in this project, `doctest`, refer to the `FRAMEWORK.md` file which is located in the same folder as this `README.md`. This document provides comprehensive guidelines and is available on your GitHub repository as well.
+
+## Implementing the Feature Using TDD
+
+### Start with the First Test:
+
+Implement the `IntegerToWordedString` function which converts integers into their respective textual representations. Begin with the first unit test, which should be designed to fail initially (red state), testing the simplest case (e.g., transforming 1 to One).
+
+### Progress through the Red-Green-Refactor Cycle:
+
+**Red:** Write a unit test that fails because the associated functionality is not yet implemented.
+
+**Green:** Implement the necessary functionality to pass the failing unit test.
+
+**Commit your changes to Git:** Once the test passes, commit your changes to the current branch.
+
+**Yellow:** Review the existing implementation for potential improvements (refactor stage). This might involve applying development principles like DRY (Don't Repeat Yourself) and SOLID. Ensure any refactoring does not break existing tests.
+
+### Iteratively add more tests:
+
+After your first "yellow" state, add **one** new unit test similar to the existing unit test `One` that will test a different input and expected result. Make sure that all tests pass **except** this one new test -- putting in the "red" state. Commit the changes to git. Write code to implement the functionality verified in the unit test until the test passes again ("green" state), then commit the changes to git. Continue this loop for as long as you need for implementing the specifications appropriately.
+
+### Continuous Integration:
+
+**Pull Requests and Merging:**
+After completing a cycle of implementations, consider merging your branch back into the main branch through a pull request. This practice endorses Continuous Integration, continuously merging small pieces of change into the main branch, which helps catch integration bugs early and improves cohesion in collaborative environments. \
+**Repeat:**
+Continue with the red-green-refactor cycle until the feature is fully implemented based on the comprehensive specifications dictated by your tests.
+By adhering to this structured approach, you enable a methodical implementation that adheres closely to specified requirements while maintaining high standards of code quality and coherence.

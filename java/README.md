@@ -111,18 +111,48 @@ The first execution should result in final "red" state test status like:
 
 # Using TDD to Implement the Feature
 
-Before starting to use TDD to implement the feature, we believe that you should take a strong <a href="https://martinfowler.com/bliki/Yagni.html">YAGNI</a> (You Ain't Going to Need It) and emergent design approach to this work. What does this mean? We suggest that you treat each new test case as defining a new specification for the code and that only the current set of test cases is the complete specification. Therefore, you should not design further than the current test cases even if you know more is coming (design upfront thinking). We believe that this will lead to closest experience in letting TDD drive design and refactoring rather than upfront thinking.
+This document is intended to guide you through the use of Test-Driven Development (TDD) to implement a specific feature in your project while adhering to the <a href="https://martinfowler.com/bliki/Yagni.html">YAGNI</a> (You Ain't Going to Need It) principles as outlined by Martin Fowler. YAGNI emphasizes the practice of not adding functionality until it is necessary, essentially meaning you should only implement something when there is a test that requires it. This approach avoids over-engineering and keeps the design simple and focused on what is needed at present.
 
-This project is set up to allow you to iterate on the design and implementation using red-green-yellow TDD process. The current code of the implementation and test only has stub functionality and testing defined such that code on runs in a Not Implemented exception mode. The first unit test that should test implemented functionality is implemented without its implementation ("red" state).
+## Setting up for TDD
 
-Create a new git branch to work on your implementation.
+Our project is structured to facilitate iterative development using the red-green-refactor cycle of TDD. Initially, our code and tests are stubbed out to throw a Not Implemented exception, indicating functionality that exists solely in a "red" state, awaiting implementation.
 
-To begin doing TDD using the red-green-yellow process, implement the code for IntegerToWordedString that will satisfy the first feature based unit test (the test named `One`). Write and test code until all existing unit tests succeed. Commit the changes to git.
+## Preparing your workspace:
 
-After you are in the "green" state (all unit test pass), add **one** new unit test similar to the existing unit test `One` that will test a different input and expected result. Make sure that all tests pass **except** this one new test -- putting in the "red" state. Commit the changes to git. Write code to implement the functionality verified in the unit test until the test passes again ("green" state), then commit the changes to git.
+Create a New Git Branch: Before you start implementing your feature, create a new branch in Git. This isolates your development work from the main codebase, allowing for easy version control and review processes. You can create a new branch via the following Git command:
 
-Review the code and determine whether the code design could (or should) be improved-- if it can be improved ("yellow" state). You may want to consider things like DRY and SOLID principles, as well as run code metrics to help you evaluate the quality of the current design. If so, refactor the design and code making sure that none of changes break the existing tests. Add new tests as part of the refactoring if the new design has edge conditions or other situations that should be verified to maintain the quality of the system. Make sure to current changes to git, as your create new tests and working code.
+```
+git checkout -b your-branch-name
+```
 
-Repeat this red-green-yellow process until you have fully implemented the full specification for the method.
+## Read the Framework Documentation:
 
-We recommend that do a Pull Request and merge each iteration branch back into the main code if you want to honor a Continuous Integration (CI) approach to your evolving working design.
+To get familiar with the unit testing framework used in this project, `JUnit, provided by Maven`, refer to the `FRAMEWORK.md` file which is located in the same folder as this `README.md`. This document provides comprehensive guidelines and is available on your GitHub repository as well.
+
+## Implementing the Feature Using TDD
+
+### Start with the First Test:
+
+Implement the `IntegerToWordedString` function which converts integers into their respective textual representations. Begin with the first unit test, which should be designed to fail initially (red state), testing the simplest case (e.g., transforming 1 to One).
+
+### Progress through the Red-Green-Refactor Cycle:
+
+**Red:** Write a unit test that fails because the associated functionality is not yet implemented.
+
+**Green:** Implement the necessary functionality to pass the failing unit test.
+
+**Commit your changes to Git:** Once the test passes, commit your changes to the current branch.
+
+**Yellow:** Review the existing implementation for potential improvements (refactor stage). This might involve applying development principles like DRY (Don't Repeat Yourself) and SOLID. Ensure any refactoring does not break existing tests.
+
+### Iteratively add more tests:
+
+After your first "yellow" state, add **one** new unit test similar to the existing unit test `One` that will test a different input and expected result. Make sure that all tests pass **except** this one new test -- putting in the "red" state. Commit the changes to git. Write code to implement the functionality verified in the unit test until the test passes again ("green" state), then commit the changes to git. Continue this loop for as long as you need for implementing the specifications appropriately.
+
+### Continuous Integration:
+
+**Pull Requests and Merging:**
+After completing a cycle of implementations, consider merging your branch back into the main branch through a pull request. This practice endorses Continuous Integration, continuously merging small pieces of change into the main branch, which helps catch integration bugs early and improves cohesion in collaborative environments. \
+**Repeat:**
+Continue with the red-green-refactor cycle until the feature is fully implemented based on the comprehensive specifications dictated by your tests.
+By adhering to this structured approach, you enable a methodical implementation that adheres closely to specified requirements while maintaining high standards of code quality and coherence.
