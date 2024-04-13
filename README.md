@@ -2,7 +2,7 @@
 
 This project is designed as an educational resource to familiarize you with Test-Driven Development (TDD). It begins with a rudimentary project structure that merely contains the basic architecture: a main program, a function declaration for conversion processes, and a couple of preliminary unit tests. These elements establish a foundational framework that encourages learning and applying TDD principles hands-on.
 
-The repository organizational structure is delineated by programming languages. The languages available are [**C#**](https://github.com/css-software-engineering-studio/sample-tdd/tree/readme-update/csharp), [**Java**](https://github.com/css-software-engineering-studio/sample-tdd/tree/readme-update/java), [**C++**](https://github.com/css-software-engineering-studio/sample-tdd/tree/readme-update/cplusplus), [**Python**](https://github.com/css-software-engineering-studio/sample-tdd/tree/readme-update/python), and [**JavaScript**](...)
+The repository organizational structure is delineated by programming languages. The languages available are [**C#**](https://github.com/css-software-engineering-studio/sample-tdd/tree/readme-update/csharp), [**Java**](https://github.com/css-software-engineering-studio/sample-tdd/tree/readme-update/java), [**C++**](https://github.com/css-software-engineering-studio/sample-tdd/tree/readme-update/cplusplus), [**Python**](https://github.com/css-software-engineering-studio/sample-tdd/tree/readme-update/python), and [**JavaScript**](https://github.com/css-software-engineering-studio/sample-tdd/tree/readme-update/javascript)
 
 Each language-specific directory contains two crucial documents:
 
@@ -28,6 +28,10 @@ Each language-specific sub-folder contains its own `README.md` file, which detai
 ### [Python:](https://github.com/css-software-engineering-studio/sample-tdd/tree/readme-update/python)
 
 - **Unit Testing Framework:** Python's native `unittest` library supports the TDD approach in this project. Additonal comprehensive information is available on Python’s official documentation site: [unittest — Unit testing framework](https://docs.python.org/3/library/unittest.html).
+
+### [JavaScript:](https://github.com/css-software-engineering-studio/sample-tdd/tree/readme-update/javascript)
+
+- **Unit Testing Framework:** JavaScript's `jest` library supports the TDD approach in this project. Additonal comprehensive information is available on their official documentation site: [jest — Unit testing framework](https://jestjs.io/docs/getting-started).
 
 # Additional Learning Resources:
 
