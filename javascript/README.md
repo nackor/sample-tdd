@@ -146,7 +146,7 @@ Implement the `IntegerToWordedString` function which converts integers into thei
 
 ### Iteratively add more tests:
 
-After your first "yellow" state, add **one** new unit test similar to the existing unit test `One` that will test a different input and expected result. Make sure that all tests pass **except** this one new test -- putting in the "red" state. Commit the changes to git. Write code to implement the functionality verified in the unit test until the test passes again ("green" state), then commit the changes to git. Continue this loop for as long as you need for implementing the specifications appropriately.
+After your first "yellow" state, add **one** new unit test similar to the existing unit test `FirstPositiveIntegerIsOne` that will test a different input and expected result. Make sure that all tests pass **except** this one new test -- putting in the "red" state. Commit the changes to git. Write code to implement the functionality verified in the unit test until the test passes again ("green" state), then commit the changes to git. Continue this loop for as long as you need for implementing the specifications appropriately.
 
 ### Continuous Integration:
 
