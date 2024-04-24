@@ -2,7 +2,7 @@
 
 This project is designed as an educational resource to familiarize you with Test-Driven Development (TDD). It begins with a rudimentary project structure that merely contains the basic architecture: a main program, a function declaration for conversion processes, and a couple of preliminary unit tests. These elements establish a foundational framework that encourages learning and applying TDD principles hands-on.
 
-The repository organizational structure is delineated by programming languages. The languages available are [**C#**](https://github.com/css-software-engineering-studio/sample-tdd/tree/main/csharp), [**Java**](https://github.com/css-software-engineering-studio/sample-tdd/tree/main/java), [**C++**](https://github.com/css-software-engineering-studio/sample-tdd/tree/main/cplusplus), [**Python**](https://github.com/css-software-engineering-studio/sample-tdd/tree/main/python), and [**JavaScript**](https://github.com/css-software-engineering-studio/sample-tdd/tree/main/javascript)
+The repository organizational structure is delineated by programming languages. The languages available are [**C#**](https://github.com/css-software-engineering-studio/sample-tdd/tree/main/csharp), [**Java**](https://github.com/css-software-engineering-studio/sample-tdd/tree/main/java), [**C++**](https://github.com/css-software-engineering-studio/sample-tdd/tree/main/cplusplus), [**Python**](https://github.com/css-software-engineering-studio/sample-tdd/tree/main/python), [**Dart**](https://github.com/css-software-engineering-studio/sample-tdd/tree/main/dart), and [**JavaScript**](https://github.com/css-software-engineering-studio/sample-tdd/tree/main/javascript)
 
 Each language-specific directory contains two crucial documents:
 
@@ -37,7 +37,7 @@ Each language-specific sub-folder contains its own `README.md` file, which detai
 
 - **Unit Testing Framework:** Dart's `test` package is used to support the TDD approach in this project. Additional comprehensive information is available on the official documentation site: [Dart — Unit testing with the test package](https://dart.dev/tools/dart-test).
 
-### After Completing IntegerToWordedString()
+# After Completing IntegerToWordedString()
 
 Upon completing the `IntegerToWordedString()` functionality, follow these concise yet significant steps to enhance your Test-Driven Development (TDD) skills and refine your project:
 
@@ -60,3 +60,17 @@ Beyond the core instructional content, two PDF documents are provided to enhance
 
 - [**PRIMER.PDF:**](https://github.com/css-software-engineering-studio/sample-tdd/blob/main/PRIMER.pdf) This document is derived from discussions with students who have previously engaged with this assignment, offering practical insights and firsthand experiences. A continiously-updated version of this as a [Google Document can be found here.](https://docs.google.com/document/d/1Uxb2fVq267BSKKTXfm6147A4C6zFFDlfIKALhYliaSc/edit?usp=sharing)
 - [**UNITTESTING.PDF:**](https://github.com/css-software-engineering-studio/sample-tdd/blob/main/UNITTESTING.pdf) Contains supplemental information that expands further on unit testing techniques and best practices. A continiously-updated version of this as a [Google Document can be found here.](https://docs.google.com/document/d/16ESV-HJAJi5HvYEkTLNpJCUNP5w9-axnhDSB2uQB3Ts/edit?usp=sharing)
+
+Additonal language-specific introductory test-driven-development content can be found in the following documents:
+
+- [**For Python**](https://github.com/unicodeveloper/awesome-tdd?tab=readme-ov-file#tdd-in-python)
+- [**For JavaScript**](https://github.com/unicodeveloper/awesome-tdd?tab=readme-ov-file#tdd-in-javascript)
+- [**For Java**](https://github.com/unicodeveloper/awesome-tdd?tab=readme-ov-file#tdd-in-javascript)
+- [**For C#**](https://github.com/unicodeveloper/awesome-tdd?tab=readme-ov-file#tdd-in-c)
+
+Beyond the introductory content provided, further information can be found here on a set of more advanced topics:
+
+- [**Test First vs. Test Driven**](https://dev.to/mindplay/test-driven-vs-test-first-24ea)
+- [**Test Driven Development vs Behavior Driven Development**](https://joshldavis.com/2013/05/27/difference-between-tdd-and-bdd/)
+- [**Mocking / Test Doubles**](https://blog.pragmatists.com/test-doubles-fakes-mocks-and-stubs-1a7491dfa3da)
+- [**Refactoring Hell -- How to avoid it.**](https://wiki.c2.com/?RefactoringHell)
