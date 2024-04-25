@@ -15,27 +15,27 @@ Each language-specific sub-folder contains its own `README.md` file, which detai
 
 ### [C#:](https://github.com/css-software-engineering-studio/sample-tdd/tree/main/csharp)
 
-- **Unit Testing Framework:** The project leverages xUnit, a popular choice for unit testing in C# applications, thoroughly documented by Microsoft: [Unit Testing with xUnit.net and .NET](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-dotnet-test).
+- **Unit Testing Framework:** The project leverages xUnit, a popular choice for unit testing in C# applications, thoroughly documented by Microsoft: [Unit Testing with xUnit.net and .NET](https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-dotnet-test), with applied usage [here on Medium](https://medium.com/@kova98/unit-testing-net-7-code-with-xunit-a0cfbca75599), or [alternatively in Video Form](https://www.youtube.com/watch?v=mtlE-iHIrH0).
 
 ### [Java:](https://github.com/css-software-engineering-studio/sample-tdd/tree/main/java)
 
-- **Unit Testing Framework:** JUnit is utilized, a staple for Java developers, integrated through Apache Maven. Additional detailed information can be found in Maven’s official guide: [Getting Started with Apache Maven](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html).
+- **Unit Testing Framework:** JUnit is utilized, a staple for Java developers, integrated through Apache Maven. Additional information can be found in Maven’s official guide: [Getting Started with Apache Maven](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html), with applied usage [here by Marc Nuri](https://blog.marcnuri.com/junit5-how-to-run-unit-tests-in-maven) or [alternatively in Video Form](https://www.youtube.com/watch?v=3IORu_Q0v0E).
 
 ### [C++:](https://github.com/css-software-engineering-studio/sample-tdd/tree/main/cplusplus)
 
-- **Unit Testing Framework:** The project utilizes doctest, a light, fast, and open-source testing framework for C++. Additional extensive documentation is readily accessible here: [doctest documentation](bit.ly/doctest-docs).
+- **Unit Testing Framework:** The project utilizes doctest, a light, fast, and open-source testing framework for C++. Additional documentation is readily accessible here: [doctest documentation](bit.ly/doctest-docs), with applied usage [here on yizhang82's blog](https://yizhang82.dev/doctest), or [alternatively in Video Form](https://www.youtube.com/watch?v=SiuuotWSFkw).
 
 ### [Python:](https://github.com/css-software-engineering-studio/sample-tdd/tree/main/python)
 
-- **Unit Testing Framework:** Python's native `unittest` library supports the TDD approach in this project. Additonal comprehensive information is available on Python’s official documentation site: [unittest — Unit testing framework](https://docs.python.org/3/library/unittest.html).
+- **Unit Testing Framework:** Python's native `unittest` library supports the TDD approach in this project. Additonal information is available on Python’s official documentation site: [unittest — Unit testing framework](https://docs.python.org/3/library/unittest.html), with applied usage [here by FreeCodeCamp](https://www.freecodecamp.org/news/learning-to-test-with-python-997ace2d8abe/), or [alternatively in Video Form](https://www.youtube.com/watch?v=ibVSPVz2LAA).
 
 ### [JavaScript:](https://github.com/css-software-engineering-studio/sample-tdd/tree/main/javascript)
 
-- **Unit Testing Framework:** JavaScript's `jest` library supports the TDD approach in this project. Additonal comprehensive information is available on their official documentation site: [jest — Unit testing framework](https://jestjs.io/docs/getting-started).
+- **Unit Testing Framework:** JavaScript's `jest` library supports the TDD approach in this project. Additonal documentation is available on their official documentation site: [jest — Unit testing framework](https://jestjs.io/docs/getting-started), with applied usage [here by FreeCodeCamp](https://www.freecodecamp.org/news/test-driven-development-tutorial-how-to-test-javascript-and-reactjs-app/), or [alternatively in Video Form](https://www.youtube.com/watch?v=VfTkMjccTzc).
 
 ### [Dart:](https://github.com/css-software-engineering-studio/sample-tdd/tree/main/dart)
 
-- **Unit Testing Framework:** Dart's `test` package is used to support the TDD approach in this project. Additional comprehensive information is available on the official documentation site: [Dart — Unit testing with the test package](https://dart.dev/tools/dart-test).
+- **Unit Testing Framework:** Dart's `test` package is used to support the TDD approach in this project. Additional information is available on the official documentation site: [Dart — Unit testing with the test package](https://dart.dev/tools/dart-test), with [extra information here](https://github.com/Yczar/test-driven-dart).
 
 # After Completing IntegerToWordedString()
 
@@ -56,21 +56,20 @@ These 'post-completion' next steps are not universal, but guidelines, as they ma
 
 # Additional Learning Resources:
 
-Beyond the core instructional content, two PDF documents are provided to enhance your understanding and application of unit testing concepts:
+- Beyond the core instructional content, two PDF documents are provided to enhance your understanding and application of unit testing concepts:
 
-- [**PRIMER.PDF:**](https://github.com/css-software-engineering-studio/sample-tdd/blob/main/PRIMER.pdf) This document is derived from discussions with students who have previously engaged with this assignment, offering practical insights and firsthand experiences. A continiously-updated version of this as a [Google Document can be found here.](https://docs.google.com/document/d/1Uxb2fVq267BSKKTXfm6147A4C6zFFDlfIKALhYliaSc/edit?usp=sharing)
-- [**UNITTESTING.PDF:**](https://github.com/css-software-engineering-studio/sample-tdd/blob/main/UNITTESTING.pdf) Contains supplemental information that expands further on unit testing techniques and best practices. A continiously-updated version of this as a [Google Document can be found here.](https://docs.google.com/document/d/16ESV-HJAJi5HvYEkTLNpJCUNP5w9-axnhDSB2uQB3Ts/edit?usp=sharing)
+  > - [**PRIMER.PDF:**](https://github.com/css-software-engineering-studio/sample-tdd/blob/main/PRIMER.pdf) This document is derived from discussions with students who have previously engaged with this assignment, offering practical insights and firsthand experiences. A continiously-updated version of this as a [Google Document can be found here.](https://docs.google.com/document/d/1Uxb2fVq267BSKKTXfm6147A4C6zFFDlfIKALhYliaSc/edit?usp=sharing) \
+  > - [**UNITTESTING.PDF:**](https://github.com/css-software-engineering-studio/sample-tdd/blob/main/UNITTESTING.pdf) Contains supplemental information that expands further on unit testing techniques and best practices. A continiously-updated version of this as a [Google Document can be found here.](https://docs.google.com/document/d/16ESV-HJAJi5HvYEkTLNpJCUNP5w9-axnhDSB2uQB3Ts/edit?usp=sharing)
 
-Additonal language-specific introductory test-driven-development content can be found in the following documents:
+- Additonal language-specific introductory test-driven-development content can be found in the following documents:
 
-- [**For Python**](https://github.com/unicodeveloper/awesome-tdd?tab=readme-ov-file#tdd-in-python)
-- [**For JavaScript**](https://github.com/unicodeveloper/awesome-tdd?tab=readme-ov-file#tdd-in-javascript)
-- [**For Java**](https://github.com/unicodeveloper/awesome-tdd?tab=readme-ov-file#tdd-in-javascript)
-- [**For C#**](https://github.com/unicodeveloper/awesome-tdd?tab=readme-ov-file#tdd-in-c)
+  > - [**For Python**](https://github.com/unicodeveloper/awesome-tdd?tab=readme-ov-file#tdd-in-python) \
+  > - [**For JavaScript**](https://github.com/unicodeveloper/awesome-tdd?tab=readme-ov-file#tdd-in-javascript) \
+  > - [**For Java**](https://github.com/unicodeveloper/awesome-tdd?tab=readme-ov-file#tdd-in-javascript) \
+  > - [**For C#**](https://github.com/unicodeveloper/awesome-tdd?tab=readme-ov-file#tdd-in-c)
 
-Beyond the introductory content provided, further information can be found here on a set of more advanced topics:
-
-- [**Test First vs. Test Driven**](https://dev.to/mindplay/test-driven-vs-test-first-24ea)
-- [**Test Driven Development vs Behavior Driven Development**](https://joshldavis.com/2013/05/27/difference-between-tdd-and-bdd/)
-- [**Mocking / Test Doubles**](https://blog.pragmatists.com/test-doubles-fakes-mocks-and-stubs-1a7491dfa3da)
-- [**Refactoring Hell -- How to avoid it.**](https://wiki.c2.com/?RefactoringHell)
+- Beyond the introductory content provided, further information can be found here on a set of more advanced topics:
+  > - [**Test First vs. Test Driven**](https://dev.to/mindplay/test-driven-vs-test-first-24ea) \
+  > - [**Test Driven Development vs Behavior Driven Development**](https://joshldavis.com/2013/05/27/difference-between-tdd-and-bdd/) \
+  > - [**Mocking / Test Doubles**](https://blog.pragmatists.com/test-doubles-fakes-mocks-and-stubs-1a7491dfa3da) \
+  > - [**Refactoring Hell -- How to avoid it.**](https://wiki.c2.com/?RefactoringHell)
