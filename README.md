@@ -54,22 +54,10 @@ Upon completing the `IntegerToWordedString()` functionality, follow these concis
 
 These 'post-completion' next steps are not universal, but guidelines, as they may be different based on the context of situation that this project is being completed.
 
-# Additional Learning Resources:
+# Helpful Additional Resources:
 
-- Beyond the core instructional content, two PDF documents are provided to enhance your understanding and application of unit testing concepts:
+- **Additonal information, and the next layers of the Home of TDD can be found back at the [Home Repository](https://github.com/zukixa/home-of-tdd?tab=readme-ov-file#layer-1-so-many-fundamentals----time-to-learn-them)**
+- Beyond the layered content, two PDF documents are provided in here to enhance your understanding and application of unit testing concepts:
 
   > - [**PRIMER.PDF:**](https://github.com/css-software-engineering-studio/sample-tdd/blob/main/PRIMER.pdf) This document is derived from discussions with students who have previously engaged with this assignment, offering practical insights and firsthand experiences. A continiously-updated version of this as a [Google Document can be found here.](https://docs.google.com/document/d/1Uxb2fVq267BSKKTXfm6147A4C6zFFDlfIKALhYliaSc/edit?usp=sharing) \
   > - [**UNITTESTING.PDF:**](https://github.com/css-software-engineering-studio/sample-tdd/blob/main/UNITTESTING.pdf) Contains supplemental information that expands further on unit testing techniques and best practices. A continiously-updated version of this as a [Google Document can be found here.](https://docs.google.com/document/d/16ESV-HJAJi5HvYEkTLNpJCUNP5w9-axnhDSB2uQB3Ts/edit?usp=sharing)
-
-- Additonal language-specific introductory test-driven-development content can be found in the following documents:
-
-  > - [**For Python**](https://github.com/unicodeveloper/awesome-tdd?tab=readme-ov-file#tdd-in-python) \
-  > - [**For JavaScript**](https://github.com/unicodeveloper/awesome-tdd?tab=readme-ov-file#tdd-in-javascript) \
-  > - [**For Java**](https://github.com/unicodeveloper/awesome-tdd?tab=readme-ov-file#tdd-in-javascript) \
-  > - [**For C#**](https://github.com/unicodeveloper/awesome-tdd?tab=readme-ov-file#tdd-in-c)
-
-- Beyond the introductory content provided, further information can be found here on a set of more advanced topics:
-  > - [**Test First vs. Test Driven**](https://dev.to/mindplay/test-driven-vs-test-first-24ea) \
-  > - [**Test Driven Development vs Behavior Driven Development**](https://joshldavis.com/2013/05/27/difference-between-tdd-and-bdd/) \
-  > - [**Mocking / Test Doubles**](https://blog.pragmatists.com/test-doubles-fakes-mocks-and-stubs-1a7491dfa3da) \
-  > - [**Refactoring Hell -- How to avoid it.**](https://wiki.c2.com/?RefactoringHell)
