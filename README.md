@@ -51,6 +51,7 @@ Upon completing the `IntegerToWordedString()` functionality, follow these concis
 
 - **Continuous Learning and Feedback:** Keep enhancing your TDD proficiency when able through more complex projects and seek feedback from peers or mentors.
 - **Expand Your Expertise:** Continue exploring advanced TDD techniques and other testing methodologies to broaden your software testing skills and knowledge.
+- **Take on the next layer:** As part of the 'Home-of-TDD' group of repositories, you have now completed Level 1! [Continuing with the Home-of-TDD path, with Level 2](https://github.com/zukixa/home-of-tdd?tab=readme-ov-file#layer-2-beyond-the-fundamentals----a-lot-of-fun) can help you further practice your skills and knowledge with TDD.
 
 These 'post-completion' next steps are not universal, but guidelines, as they may be different based on the context of situation that this project is being completed.
 
@@ -59,5 +60,5 @@ These 'post-completion' next steps are not universal, but guidelines, as they ma
 - **Additonal information, and the next layers of the Home of TDD can be found back at the [Home Repository](https://github.com/zukixa/home-of-tdd?tab=readme-ov-file#layer-1-so-many-fundamentals----time-to-learn-them)**
 - Beyond the layered content, two PDF documents are provided in here to enhance your understanding and application of unit testing concepts:
 
-  > - [**PRIMER.PDF:**](https://github.com/css-software-engineering-studio/sample-tdd/blob/main/PRIMER.pdf) This document is derived from discussions with students who have previously engaged with this assignment, offering practical insights and firsthand experiences. A continiously-updated version of this as a [Google Document can be found here.](https://docs.google.com/document/d/1Uxb2fVq267BSKKTXfm6147A4C6zFFDlfIKALhYliaSc/edit?usp=sharing) \
+  > - [**PRIMER.PDF:**](https://github.com/css-software-engineering-studio/sample-tdd/blob/main/PRIMER.pdf) This document is derived from discussions with students who have previously engaged with this assignment, offering practical insights and firsthand experiences. A continiously-updated version of this as a [Google Document can be found here.](https://docs.google.com/document/d/1Uxb2fVq267BSKKTXfm6147A4C6zFFDlfIKALhYliaSc/edit?usp=sharing)
   > - [**UNITTESTING.PDF:**](https://github.com/css-software-engineering-studio/sample-tdd/blob/main/UNITTESTING.pdf) Contains supplemental information that expands further on unit testing techniques and best practices. A continiously-updated version of this as a [Google Document can be found here.](https://docs.google.com/document/d/16ESV-HJAJi5HvYEkTLNpJCUNP5w9-axnhDSB2uQB3Ts/edit?usp=sharing)
