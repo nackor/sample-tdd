@@ -2,12 +2,6 @@
 
 This tutorial will explore the essential syntax and constructs necessary to start writing unit tests with the JUnit framework, which is frequently used for Test-Driven Development (TDD) in Java. We will guide you through setting up a basic unit test scenario using JUnit, designed for beginners who are incorporating unit testing into their Java projects.
 
-**For further in-depth information, you can refer to the following resources:**
-
-- JUnit 5 User Guide: https://junit.org/junit5/docs/current/user-guide/
-- Comprehensive JUnit Tutorial: https://www.baeldung.com/junit
-- JUnit GitHub Repository: https://github.com/junit-team/junit5
-
 ## Understanding JUnit
 
 JUnit is a powerful testing framework in the Java ecosystem, known for its simple annotations for testing, as well as its extendibility and integration with various build tools and IDEs. It provides a convenient platform for developers to write and run repeatable tests.
@@ -15,72 +9,73 @@ JUnit is a powerful testing framework in the Java ecosystem, known for its simpl
 ### Key Components
 
 1. **Defining Test Classes and Methods:**
-   JUnit organizes tests into classes and methods. Each test is a method annotated with `@Test` to indicate that it is a test case.
+   JUnit structures tests within classes and methods, with each test method indicated using the `@Test` annotation.
 
 ```java
-public class CalculatorTest {
+public class FibonacciTest {
     @Test
-    public void testAdd() {
+    public void testFibonacci() {
     // Test code here
     }
 }
 ```
 
 2. **Assertions:**
-   Assertions are crucial for verifying test conditions. JUnit provides a series of assertion methods in the `Assertions` class.
+   Assertions are essential for verifying test outcomes. JUnit offers a variety of assertion methods in the `Assertions` class.
 
 ```java
 Assertions.assertEquals(expected, actual);
 ```
 
-This assertion checks for the equality of the expected and the actual results, which is a commonly used assertion in testing.
+This assertion method confirms that the actual result matches the expected value, commonly used to validate test scenarios.
 
-### Example: Testing a Simple Calculation
+### Example: Testing a Fibonacci Sequence Method
 
-To demonstrate, let's write a basic test for a method that sums two integers.
+To illustrate, we construct a straightforward test for a method calculating Fibonacci numbers.
 
 1. **Setup the Project:**
 
-   Start by creating a new Maven project and include JUnit as a dependency in your `pom.xml` file.
+   Initiate a new Maven project and add JUnit as a dependency in your `pom.xml`.
 
 ```java
 <dependency>
-<groupId>org.junit.jupiter</groupId>
-<artifactId>junit-jupiter-api</artifactId>
-<version>5.7.0</version>
-<scope>test</scope>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-api</artifactId>
+    <version>5.7.0</version>
+    <scope>test</scope>
 </dependency>
 ```
 
 2. **Implementing a Method:**
 
-   Create a simple method in your Java class to add two integers:
+   Develop a method in your Java class to compute Fibonacci numbers:
 
 ```java
-public class Calculator {
-    public int add(int a, int b) {
-    return a + b;
+public class FibonacciCalculator {
+    public int fibonacci(int n) {
+        if (n <= 1) return n;
+        return fibonacci(n - 1) + fibonacci(n - 2);
     }
 }
 ```
 
 3. **Writing Tests:**
 
-   Now, implement a unit test to confirm that the `add` method works as expected:
+   Formulate a unit test to verify the Fibonacci calculation:
 
 ```java
-public class CalculatorTests {
+public class FibonacciCalculatorTests {
     @Test
-    public void testAdd() {
-        Calculator calculator = new Calculator();
-        Assertions.assertEquals(11, calculator.add(5, 6));
+    public void testFibonacci() {
+        FibonacciCalculator calculator = new FibonacciCalculator();
+        Assertions.assertEquals(5, calculator.fibonacci(5));
     }
 }
 ```
 
 ### Running Tests
 
-In IDEs like Eclipse, IntelliJ, or through Maven, tests can be executed. For Maven, use the command line:
+Tests can be executed in IDEs like Eclipse and IntelliJ, or via Maven in the command line:
 
 ```
 mvn test
@@ -88,11 +83,15 @@ mvn test
 
 ### Breakdown of the Test Case
 
-- **Test Method:** `testAdd()` executes the code under test—in this case, adding two numbers using the `Calculator` class.
-- **Assertion:** `Assertions.assertEquals(11, calculator.add(5, 6));` validates that the `add` method returns 11 when the arguments 5 and 6 are passed, ensuring the method functions correctly.
+- **Test Method:** `testFibonacci()` tests the Fibonacci number generation by invoking the `fibonacci` method.
+- **Assertion:** `Assertions.assertEquals(5, calculator.fibonacci(5));` ensures the `fibonacci` method accurately computes the fifth Fibonacci number, confirming proper functionality.
 
 ### Conclusion
 
 Through this tutorial, we covered the basic syntax and setup for using JUnit in Java. JUnit's straightforward approach facilitates integrating unit testing as a key part of your development process, emphasizing early testing to improve software quality. With its robust features and seamless IDE integration, JUnit supports developing clean, stable code.
 
-Please explore the suggested resources for more detailed knowledge and advanced topics in using JUnit.
+For further in-depth information, you can refer to the following resources:
+
+- JUnit 5 User Guide: https://junit.org/junit5/docs/current/user-guide/
+- Comprehensive JUnit Tutorial: https://www.baeldung.com/junit
+- JUnit GitHub Repository: https://github.com/junit-team/junit5

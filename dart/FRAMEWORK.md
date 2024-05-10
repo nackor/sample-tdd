@@ -1,4 +1,4 @@
-# Basic Syntax and Usage of unittest for TDD in Dart
+# Basic Syntax and Usage of 'test' for TDD in Dart
 
 This tutorial will introduce you to the basic syntax and constructs needed to start writing unit tests with Dart's `test` package, which is commonly used for Test-Driven Development (TDD). We'll guide you through setting up a basic unit test scenario using `test`, making this tutorial ideal for beginners looking to incorporate unit testing into their Dart projects.
 
@@ -14,64 +14,65 @@ Dart's `test` package provides a way to write and run tests within the Dart envi
 ### Key Components
 
 1. **Test Case Structure:**
-   In Dart, a test case is created using the `test()` function. Each test is defined within this function.
+   In Dart, a test is structured using the `test()` function, where each test is encapsulated within it.
 
 ```dart
-    import 'package:test/test.dart';
+import 'package:test/test.dart';
 
-    void main() {
-        test('sums numbers', () {
-        expect(sum([1, 2, 3]), equals(6));
+void main() {
+    test('calculates Fibonacci numbers', () {
+        expect(fibonacci(5), equals(5));
     });
 }
 ```
 
 2. **Assertions:**
-   The `test` package provides a number of assertion methods like `expect()`, `equals()`, etc.
+   The `test` package facilitates a range of assertion methods such as `expect()` and `equals()`, essential for verifying test outcomes.
 
 ```dart
-    expect(result, equals(expected));
+expect(result, equals(expected));
 ```
 
-This method is used to check that the result you received matches the expected result. It is central to setting up test conditions.
+This method confirms that the outcome from a function aligns with what is expected.
 
-### Example: Testing a Simple Addition Function
+### Example: Testing a Fibonacci Sequence Function
 
-To illustrate, let's write a simple test for a function that sums a list of numbers.
+To demonstrate, we'll set up a test for a function that computes Fibonacci numbers.
 
 1. **Implementing the Function:**
 
-   Create a simple function outside of the test suite to sum numbers:
+   Define a function that calculates a Fibonacci number recursively:
 
 ```dart
-    int sum(List<int> numbers) {
-    return numbers.reduce((value, element) => value + element);
+int fibonacci(int n) {
+    if (n <= 1) return n;
+    return fibonacci(n - 1) + fibonacci(n - 2);
 }
 ```
 
 2. **Writing Tests:**
 
-   Implement a unit test to ensure that the `sum` function works as expected:
+   Create a unit test that verifies the `fibonacci` function:
 
 ```dart
-    void main() {
-        test('sums numbers', () {
-        expect(sum([1, 2, 3]), equals(6));
+void main() {
+    test('calculates Fibonacci numbers', () {
+        expect(fibonacci(5), equals(5));
     });
 }
 ```
 
 ### Running Tests
 
-To run the tests, if you save your script as `test_sum.dart`, you can run the following command in the terminal:
+Execute the tests by saving your script as `test_fibonacci.dart` and running this command in the terminal:
 
 ```bash
-    dart test test_sum.dart
+dart test test_fibonacci.dart
 ```
 
 ### Breakdown of the Test Case
 
-- **Test Method:** `sums numbers` calls the `sum` function with a specific list of numbers and checks that the result is correct using `expect(equals())`.
+- **Test Method:** `"calculates Fibonacci numbers"` executes the `fibonacci` function with a specific input and validates the result with `expect(equals())`.
 
 ### Conclusion
 

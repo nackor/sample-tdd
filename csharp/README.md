@@ -1,11 +1,7 @@
-# Introduction
-
-The simple project designed to let you practice using TDD (Test Driven Development).
-
 # Getting Started
 
 The purpose of the project is to let you practice using TDD (Test-Driven Development, aka Test-Driven Design). \
-To experience TDD, use the red-green-refactoring pattern to fully implement the IntegerToWordedSTring conversion function. This function takes an integer number and converts to a worded string (in whatever output language that you care to use for implementation though the initial test is based on English). The project source is explicitly stubbed out to a minimum implementation that only defines main program, the conversion function declaration, and two unit tests.
+To experience TDD, use the red-green-refactoring pattern to fully implement the IntegerToWordedString conversion function. This function takes an integer number and converts to a worded string (in whatever output language that you care to use for implementation though the initial test is based on English). The project source is explicitly stubbed out to a minimum implementation that only defines main program, the conversion function declaration, and two unit tests.
 
 # Functional Specification
 
@@ -66,7 +62,7 @@ Our project is structured to facilitate iterative development using the red-gree
 
 ## Preparing your workspace:
 
-Create a New Git Branch: Before you start implementing your feature, create a new branch in Git. This isolates your development work from the main codebase, allowing for easy version control and review processes. You can create a new branch via the following Git command:
+Before you start implementing your feature, create a new branch in Git. This isolates your development work from the main codebase, allowing for easy version control and review processes. You can create a new branch via the following Git command:
 
 ```
 git checkout -b your-branch-name

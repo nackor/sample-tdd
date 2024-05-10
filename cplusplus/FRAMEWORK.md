@@ -1,10 +1,6 @@
 # Basic Syntax and Usage of Doctest for TDD in C++
 
-This tutorial focuses on explaining the syntax and essential constructs of Doctest, a C++ testing framework. We'll cover the crucial elements needed to start writing test cases using Doctest for Test-Driven Development (TDD). \
-**For further, even more detailed information, you can check out the following two sources:**
-
-- Introductory article on Doctest by JetBrains: https://blog.jetbrains.com/rscpp/2019/07/10/better-ways-testing-with-doctest/
-- The Official Tutorial on Doctest by Doctest: https://github.com/doctest/doctest/blob/master/doc/markdown/tutorial.md
+> This tutorial focuses on explaining the syntax and essential constructs of Doctest, a C++ testing framework. We'll cover the crucial elements needed to start writing test cases using Doctest for Test-Driven Development (TDD).
 
 ## Understanding Doctest
 
@@ -38,7 +34,7 @@ Doctest is lightweight and easy to integrate into your C++ projects. It enables 
 
 ### Example: Single File Test Case
 
-Consider testing a function that adds two numbers. Start by creating a file named `example_tests.cpp`.
+Consider testing a function that calculates Fibonacci numbers. Start by creating a file named `example_tests.cpp`.
 
 1. **Starting Structure:**
 
@@ -46,8 +42,10 @@ Consider testing a function that adds two numbers. Start by creating a file name
    #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
    #include "doctest.h"
 
-   int add(int a, int b) {
-       return a + b;
+   int fib(int n) {
+      if (n <= 1)
+         return n;
+      return fib(n-1) + fib(n-2);
    }
    ```
 
@@ -57,11 +55,11 @@ Consider testing a function that adds two numbers. Start by creating a file name
 
    ```cpp
    int main(){
-        TEST_CASE("Testing addition of two numbers") {
-            CHECK(add(1, 1) == 2);
-            CHECK(add(-1, -1) == -2);
-            CHECK(add(100, 200) == 300);
-        }
+      TEST_CASE("Testing Fibonacci number calculation") {
+         CHECK(fib(0) == 0);
+         CHECK(fib(1) == 1);
+         CHECK(fib(5) == 5);
+      }
    }
    ```
 
@@ -81,16 +79,16 @@ Then, run the compiled executable:
 
 ### Breakdown of the Test Case
 
-- **Test Case Name:** `"Testing addition of two numbers"` provides a clear description of what this test case verifies.
+- **Test Case Name:** `"Testing Fibonacci number calculation"` provides a clear description of what this test case verifies.
 - **Assertions:** Each `CHECK` inside the `TEST_CASE` is an assertion testing specific scenarios:
-  - `CHECK(add(1, 1) == 2)`: Tests if the addition function correctly sums 1 and 1.
+  - `CHECK(fib(0) == 0)`: Tests if the Fibonacci function correctly calculates the Fibonacci number for 0.
   - Other `CHECK` assertions test additional scenarios accordingly.
 
 ### Conclusion
 
 This guide covered the basic syntax for starting with Doctest in C++. By understanding how to structure a test case and employ assertions, you can begin writing tests in a TDD manner. The simplicity of Doctest allows for minimal overhead, making it suitable for projects of any size. This method ensures focus on functionality and correctness from early development stages, reinforcing best coding practices and leading to robust software.
 
-If you need further information, you can refer to the sources below:
+If you need additional information, you can refer to the sources below:
 
 - Introductory article on Doctest by JetBrains: https://blog.jetbrains.com/rscpp/2019/07/10/better-ways-testing-with-doctest/
 - The Official Tutorial on Doctest by Doctest: https://github.com/doctest/doctest/blob/master/doc/markdown/tutorial.md
