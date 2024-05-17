@@ -129,7 +129,7 @@ To get familiar with the unit testing framework used in this project, `Jest`, re
 
 ### Start with the First Test:
 
-Implement the `IntegerToWordedString` function which converts integers into their respective textual representations. Begin with the first unit test, which should be designed to fail initially (red state), testing the simplest case (e.g., transforming 1 to One).
+Implement the `IntegerToWordedString` function which converts integers into their respective textual representations. Begin with the first unit test, which should be designed to fail initially (red state), testing the simplest case (e.g., transforming 1 to One). Remember the advice from home-of-tdd on how to [generate the first test case!](https://github.com/zukixa/home-of-tdd?tab=readme-ov-file#how-to-construct-a-proper-test-case)
 
 ### Progress through the Red-Green-Refactor Cycle:
 
@@ -140,6 +140,8 @@ Implement the `IntegerToWordedString` function which converts integers into thei
 **Commit your changes to Git:** Once the test passes, commit your changes to the current branch.
 
 **Yellow:** Review the existing implementation for potential improvements (refactor stage). This might involve applying development principles like DRY (Don't Repeat Yourself) and SOLID. Ensure any refactoring does not break existing tests.
+
+> Remember: It might be tempting to stray from this process, but consistency is crucial for learning! Always focus on identifying a boundary/unique case, select a representative value from that group for testing, writing the corresponding test, and then refine the code as necessary!
 
 ### Iteratively add more tests:
 

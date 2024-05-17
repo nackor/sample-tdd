@@ -23,7 +23,7 @@ Each language-specific sub-folder contains its own `README.md` file, which detai
 
 ### [C++:](https://github.com/css-software-engineering-studio/sample-tdd/tree/main/cplusplus)
 
-- **Unit Testing Framework:** The project utilizes doctest, a light, fast, and open-source testing framework for C++. Additional documentation is readily accessible here: [doctest documentation](bit.ly/doctest-docs), with applied usage [here on yizhang82's blog](https://yizhang82.dev/doctest), or [alternatively in Video Form](https://www.youtube.com/watch?v=SiuuotWSFkw).
+- **Unit Testing Framework:** The project utilizes doctest, a light, fast, and open-source testing framework for C++. Additional documentation is readily accessible here: [doctest documentation](bit.ly/doctest-docs), with applied usage [here by Viktor Kirilov](https://www.methodsandtools.com/tools/doctest.php), or [alternatively in Video Form](https://www.youtube.com/watch?v=SiuuotWSFkw).
 
 ### [Python:](https://github.com/css-software-engineering-studio/sample-tdd/tree/main/python)
 
