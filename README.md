@@ -41,6 +41,7 @@ Each language-specific sub-folder contains its own `README.md` file, which detai
 
 Upon completing the `IntegerToWordedString()` functionality, follow these concise yet significant steps to enhance your Test-Driven Development (TDD) skills and refine your project:
 
+- **Compare to zukixa-walkthru**: It is ***highly*** suggested to compare your efforts with the one I have done with [this repository](https://github.com/zukixa/walkthru), where I have provided an exemplary walkthrough of how to best complete a TDD project like sample-tdd. If your implementation significantly deviates, look at walkthru closely and understand why!
 - **Expert Review:** Schedule a session with a TDD expert (or talk to anyone knowledgeable on the topic, even ChatGPT!) to review your code and discuss the TDD process, even if your learning path doesn't formally require it. Use this opportunity to seek answers to any questions and gain insights into your code's structure and design.
 - **Self-Reflection:** Reflect on your experience with key questions:
 
