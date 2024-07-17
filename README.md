@@ -1,6 +1,6 @@
 # Introduction to the TDD Practice Project
 
-This project is designed as an educational resource to familiarize you with Test-Driven Development (TDD). It begins with a rudimentary project structure that merely contains the basic architecture: a main program, a function declaration for conversion processes, and a couple of preliminary unit tests. These elements establish a foundational framework that encourages learning and applying TDD principles hands-on.
+This project is designed as an educational resource to familiarize you with Test-Driven Design (TDD). It begins with a rudimentary project structure that merely contains the basic architecture: a main program, a function declaration for conversion processes, and a couple of preliminary unit tests. These elements establish a foundational framework that encourages learning and applying TDD principles hands-on.
 
 The repository organizational structure is delineated by programming languages. The languages available are [**C#**](https://github.com/css-software-engineering-studio/sample-tdd/tree/main/csharp), [**Java**](https://github.com/css-software-engineering-studio/sample-tdd/tree/main/java), [**C++**](https://github.com/css-software-engineering-studio/sample-tdd/tree/main/cplusplus), [**Python**](https://github.com/css-software-engineering-studio/sample-tdd/tree/main/python), [**Dart**](https://github.com/css-software-engineering-studio/sample-tdd/tree/main/dart), and [**JavaScript**](https://github.com/css-software-engineering-studio/sample-tdd/tree/main/javascript)
 
