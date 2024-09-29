@@ -16,6 +16,12 @@ void main() {
       expect(words.toLowerCase(), equals('ten'));
     });
 
+        test('last 2 digit integer is ninety-nine', () {
+      var number = 99;
+      var words = integerToWordedString(number);
+      expect(words.toLowerCase(), equals('ninety-nine'));
+    });
+
 
   });
 }
