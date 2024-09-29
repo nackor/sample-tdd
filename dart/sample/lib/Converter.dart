@@ -1,4 +1,5 @@
 
 String integerToWordedString(int number) {
-  throw UnimplementedError();
+  return "one";
+
 }
