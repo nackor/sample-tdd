@@ -1,0 +1,8 @@
+name: sample_tdd
+
+environment:
+  sdk: '^3.5.0'
+
+
+dependencies:
+  test: any

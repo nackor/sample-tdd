@@ -6,7 +6,7 @@ void main() {
     // TODO: This test will become obsolete once the IntegerToWordedString
     // function is fully implemented as per the specifications.
     test('not implemented yet', () {
-      expect(() => integerToWordedString(-1000000), throwsA(isA<NotImplementedError>()));
+      expect(() => integerToWordedString(-1000000), throwsA(isA<UnimplementedError>()));
     });
 
     // TODO: Initial "red" test to code logic
