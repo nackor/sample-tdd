@@ -75,5 +75,11 @@ void main() {
       expect(words.toLowerCase(), equals('thirty-six thousand fifty-seven'));
     });
 
+    test('first 6 digit integer 100000 is one hundred thousand', () {
+      var number = 100000;
+      var words = integerToWordedString(number);
+      expect(words.toLowerCase(), equals('one hundred thousand'));
+    });
+
   });
 }
