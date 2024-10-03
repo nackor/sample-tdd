@@ -84,7 +84,7 @@ void main() {
     test('another 6 digit integer 999999 is nine hundred thousand nine hundred ninety nine', () {
       var number = 999999;
       var words = integerToWordedString(number);
-      expect(words.toLowerCase(), equals('nine hundred thousand nine hundred ninety nine'));
+      expect(words.toLowerCase(), equals('nine hundred ninety-nine thousand nine hundred ninety-nine'));
     });
 
   });
