@@ -105,5 +105,11 @@ void main() {
       expect(words.toLowerCase(), equals('forty-five million one hundred twenty-one thousand one hundred fifty-six'));
     });
 
+      test('a several hundred million number is 641,021,932 six hundred forty-one million twenty-one thousand nine hundred thirty-two', () {
+      var number = 641021932;
+      var words = integerToWordedString(number);
+      expect(words.toLowerCase(), equals('six hundred forty-one million twenty-one thousand nine hundred thirty-two'));
+    });
+
   });
 }
