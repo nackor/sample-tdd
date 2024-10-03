@@ -87,5 +87,11 @@ void main() {
       expect(words.toLowerCase(), equals('nine hundred ninety-nine thousand nine hundred ninety-nine'));
     });
 
+    test('the first 7 digit integer 1,000,000 is one million', () {
+      var number = 1000000;
+      var words = integerToWordedString(number);
+      expect(words.toLowerCase(), equals('one million'));
+    });
+
   });
 }
