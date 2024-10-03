@@ -93,5 +93,11 @@ void main() {
       expect(words.toLowerCase(), equals('one million'));
     });
 
+    test('a teens million number is 11,111,234 eleven million one hundred eleven thousand two hundred thirty-four', () {
+      var number = 11111234;
+      var words = integerToWordedString(number);
+      expect(words.toLowerCase(), equals('eleven million one hundred eleven thousand two hundred thirty-four'));
+    });
+
   });
 }
