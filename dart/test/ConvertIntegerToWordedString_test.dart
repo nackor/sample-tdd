@@ -34,6 +34,12 @@ void main() {
       expect(words.toLowerCase(), equals('one hundred'));
     });
 
+    test('a different 3 digit integer is three hundred sixty-four', () {
+      var number = 364;
+      var words = integerToWordedString(number);
+      expect(words.toLowerCase(), equals('three hundred sixty-four'));
+    });
+
 
   });
 }
