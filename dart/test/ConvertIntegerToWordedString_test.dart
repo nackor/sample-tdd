@@ -63,5 +63,11 @@ void main() {
       expect(words.toLowerCase(), equals('twelve thousand twenty-six'));
     });
 
+    test('5 digit integer larger than 20,000 is thirty six thousand fifty-seven', () {
+      var number = 36057;
+      var words = integerToWordedString(number);
+      expect(words.toLowerCase(), equals('thirty six thousand fifty-seven'));
+    });
+
   });
 }
