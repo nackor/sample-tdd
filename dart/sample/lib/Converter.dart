@@ -12,7 +12,7 @@ String recurse_integerToWordedString(int number) {
   if (number < 20){return teens[number % 10];}
   if (number < 100){return tens[(number / 10).floor()] + ( (number%10==0) ? "" : '-' + recurse_integerToWordedString(number % 10));}
   if (number < 1000){return ones[(number/100).floor()] + " hundred" + ( (number%100==0) ? "" : " " + recurse_integerToWordedString(number % 100));}
-  if (number<100000){return  recurse_integerToWordedString(number ~/ 1000) + ' thousand' + ( (number%1000==0) ? "" : " " + recurse_integerToWordedString(number % 1000));}
+  if (number<1000000){return  recurse_integerToWordedString(number ~/ 1000) + ' thousand' + ( (number%1000==0) ? "" : " " + recurse_integerToWordedString(number % 1000));}
 
   return 'woops';
 }
