@@ -99,5 +99,11 @@ void main() {
       expect(words.toLowerCase(), equals('eleven million one hundred eleven thousand two hundred thirty-four'));
     });
 
+    test('a forties million number is 41,121,156 eleven million one hundred eleven thousand two hundred thirty-four', () {
+      var number = 45121156;
+      var words = integerToWordedString(number);
+      expect(words.toLowerCase(), equals('forty-five million one hundred twenty-one thousand one hundred fifty-six'));
+    });
+
   });
 }
