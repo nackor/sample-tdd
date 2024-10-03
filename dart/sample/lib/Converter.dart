@@ -9,5 +9,6 @@ String integerToWordedString(int number) {
   if (number < 20){return teens[number%10];}
   if (number < 100){return tens[(number / 10).floor()] + '-' +  integerToWordedString(number % 10);}
   if (number < 1000){return ones[(number/100).floor()] + " hundred" + ( (number%100==0) ? "" : " " + integerToWordedString(number % 100));}
+  if (number<10000){return ones[(number/1000).floor()] + ' thousand' + ( (number%1000==0) ? "" : " " + integerToWordedString(number % 1000));}
   return 'woops';
 }
