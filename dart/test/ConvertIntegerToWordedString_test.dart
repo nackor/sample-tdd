@@ -51,6 +51,11 @@ void main() {
       expect(words.toLowerCase(), equals('one thousand five hundred one'));
     });
 
+    test('first 5 digit integer is ten thousand', () {
+      var number = 10000;
+      var words = integerToWordedString(number);
+      expect(words.toLowerCase(), equals('ten thousand'));
+    });
 
   });
 }
