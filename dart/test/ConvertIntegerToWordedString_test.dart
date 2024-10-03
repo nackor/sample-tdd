@@ -69,7 +69,7 @@ void main() {
       expect(words.toLowerCase(), equals('twenty thousand'));
     });
 
-    test('5 digit integer larger than 20,000 is thirty-six thousand fifty-seven', () {
+    test('5 digit integer larger than 36057 is thirty-six thousand fifty-seven', () {
       var number = 36057;
       var words = integerToWordedString(number);
       expect(words.toLowerCase(), equals('thirty-six thousand fifty-seven'));
@@ -79,6 +79,12 @@ void main() {
       var number = 100000;
       var words = integerToWordedString(number);
       expect(words.toLowerCase(), equals('one hundred thousand'));
+    });
+
+    test('another 6 digit integer 999999 is nine hundred thousand nine hundred ninety nine', () {
+      var number = 999999;
+      var words = integerToWordedString(number);
+      expect(words.toLowerCase(), equals('nine hundred thousand nine hundred ninety nine'));
     });
 
   });
