@@ -45,6 +45,11 @@ void main() {
       var words = integerToWordedString(number);
       expect(words.toLowerCase(), equals('one thousand'));
     });
+    test('another 4 digit integer is one thousand five hundred one', () {
+      var number = 1501;
+      var words = integerToWordedString(number);
+      expect(words.toLowerCase(), equals('one thousand five hundred one'));
+    });
 
 
   });
