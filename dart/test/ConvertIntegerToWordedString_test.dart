@@ -40,6 +40,12 @@ void main() {
       expect(words.toLowerCase(), equals('three hundred sixty-four'));
     });
 
+    test('first 4 digit integer is one thousand', () {
+      var number = 1000;
+      var words = integerToWordedString(number);
+      expect(words.toLowerCase(), equals('one thousand'));
+    });
+
 
   });
 }
