@@ -117,5 +117,11 @@ void main() {
       expect(words.toLowerCase(), equals('one billion'));
     });
 
+    test('max 32 int number is 4,294,967,296 is four billion two hundred ninety four million nine hundred sixty seven thousand two hundred ninety-six', () {
+      var number = 4294967296;
+      var words = integerToWordedString(number);
+      expect(words.toLowerCase(), equals('four billion two hundred ninety-four million nine hundred sixty-seven thousand two hundred ninety-six'));
+    });
+
   });
 }
