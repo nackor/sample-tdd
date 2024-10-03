@@ -57,5 +57,11 @@ void main() {
       expect(words.toLowerCase(), equals('ten thousand'));
     });
 
+    test('another 5 digit integer is twelve thousand twenty-six', () {
+      var number = 12026;
+      var words = integerToWordedString(number);
+      expect(words.toLowerCase(), equals('twelve thousand twenty-six'));
+    });
+
   });
 }
