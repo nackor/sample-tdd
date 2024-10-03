@@ -63,10 +63,16 @@ void main() {
       expect(words.toLowerCase(), equals('twelve thousand twenty-six'));
     });
 
-    test('5 digit integer larger than 20,000 is thirty six thousand fifty-seven', () {
+    test('first integer larger than or equal to 20,000 is twenty thousand', () {
+      var number = 20000;
+      var words = integerToWordedString(number);
+      expect(words.toLowerCase(), equals('twenty thousand'));
+    });
+
+    test('5 digit integer larger than 20,000 is thirty-six thousand fifty-seven', () {
       var number = 36057;
       var words = integerToWordedString(number);
-      expect(words.toLowerCase(), equals('thirty six thousand fifty-seven'));
+      expect(words.toLowerCase(), equals('thirty-six thousand fifty-seven'));
     });
 
   });
