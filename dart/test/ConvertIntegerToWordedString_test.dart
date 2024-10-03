@@ -4,6 +4,12 @@ import '../sample/lib/converter.dart';   // Dart import syntax
 void main() {
   group('ConvertIntegerToWordedStringTests', () {
 
+    test('first non-negative integer is zero', () {
+      var number = 0;
+      var words = integerToWordedString(number);
+      expect(words.toLowerCase(), equals('zero'));
+    });
+
     test('first positive integer is one', () {
       var number = 1;
       var words = integerToWordedString(number);
